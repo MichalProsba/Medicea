@@ -7,7 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Hi all&#xD;&#xA;" HorizontalAlignment="Left" Margin="267,137,0,0" VerticalAlignment="Top" Height="80" Width="232" Click="Button_Click"/>
+        <DataGrid Margin="24,25,45,36" x:Name="SymptomGrid" RenderTransformOrigin="0.5,0.5" AlternatingRowBackground="#666" CanUserAddRows="False">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.674"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.588"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+        </DataGrid>
 
     </Grid>
 </Window>
