@@ -39,6 +39,10 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                 </Grid>
+                <Border Padding="10"/>
+                <Button Padding="6" x:Name="refreshWeather" Click="calculatePoint_Click" Height="60" Width="200" BorderThickness="3" Background="#555" >
+                    <TextBlock>Zdiagnozuj mnie</TextBlock>
+                </Button>
             </StackPanel>
         </Border>
     </StackPanel>

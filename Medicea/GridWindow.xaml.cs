@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,20 @@ namespace Medicea
             set { textBlockButtons = value; }
         }
 
+        List<Symptom> symptoms = new List<Symptom>();
+
+        public float NiedoczynnoscTarczycy = 0.0f;
+        public float ChorobaNerek = 0.0f;
+        public float ChorobaAlzheimera = 0.0f;
+        public float StwardnienieRozsianePoczatkowe = 0.0f;
+        public float StwardnienieRozsianeZaawansowane = 0.0f;
+        public float Depresja = 0.0f;
+        public float ZapalenieUcha = 0.0f;
+        public float ChorobaWiencowa = 0.0f;
+        public float Ciaza = 0.0f;
+        public float OspaWieczna = 0.0f;
+        public float ChorobaTrzustki = 0.0f;
+
         public GridWindow()
         {
             InitializeComponent();
@@ -46,9 +61,9 @@ namespace Medicea
 
         public void PrepareDataToDisplayFromDatabase()
         {
-            DatabaseSQLiteSerializer db = new DatabaseSQLiteSerializer();
+            symptoms = (new DatabaseSQLiteSerializer()).Symptoms.ToList();
 
-            foreach (Symptom i in db.Symptoms.ToList())
+            foreach (Symptom i in symptoms)
             {
                 toggleButtons.Add(new ToggleButton());
                 textBlockButtons.Add(new TextBlock());
@@ -83,7 +98,7 @@ namespace Medicea
             foreach (TextBlock i in textBlockButtons)
             {
                 i.Name = "TextBlock_" + toggleButtonNumber;
-                i.Text = db.Symptoms.ToList()[toggleButtonNumber - 1].NazwaObjawu;
+                i.Text = symptoms[toggleButtonNumber - 1].NazwaObjawu;
                 i.HorizontalAlignment = HorizontalAlignment.Center;
                 i.VerticalAlignment = VerticalAlignment.Center;
                 i.TextWrapping= TextWrapping.Wrap;
@@ -103,6 +118,68 @@ namespace Medicea
             {
                 mainGrid.Children.Add(i);
             }
+        }
+
+        private void calculatePoint_Click(object sender, RoutedEventArgs e)
+        {
+            resetPoints();
+            foreach(int i in Enumerable.Range(0, toggleButtons.Count))
+            {
+                if (toggleButtons[i].IsChecked == true) 
+                {
+                    NiedoczynnoscTarczycy += symptoms[i].WagiNiedoczynnoscTarczycy; 
+                    ChorobaNerek += symptoms[i].WagiChorobaNerek; 
+                    ChorobaAlzheimera += symptoms[i].WagiChorobaAlzheimera; 
+                    StwardnienieRozsianePoczatkowe += symptoms[i].WagiStwardnienieRozsianePoczatkowe; 
+                    StwardnienieRozsianeZaawansowane += symptoms[i].WagiStwardnienieRozsianeZaawansowane; 
+                    Depresja += symptoms[i].WagiDepresja; 
+                    ZapalenieUcha += symptoms[i].WagiZapalenieUcha; 
+                    ChorobaWiencowa += symptoms[i].WagiChorobaWiencowa; 
+                    Ciaza += symptoms[i].WagiCiaza; 
+                    OspaWieczna += symptoms[i].WagiOspaWieczna; 
+                    ChorobaTrzustki += symptoms[i].WagiChorobaTrzustki;
+                }
+            }
+            MessageBox.Show(string.Format(
+                "Choroby: \n" +
+                "NiedoczynnoscTarczycy: {0}\n" +
+                "ChorobaNerek: {1}\n" +
+                "ChorobaAlzheimera: {2}\n" +
+                "StwardnienieRozsianePoczatkowe: {3}\n" +
+                "StwardnienieRozsianeZaawansowane: {4}\n" +
+                "Depresja: {5}\n" +
+                "ZapalenieUcha: {6}\n" +
+                "ChorobaWiencowa: {7}\n" +
+                "Ciaza: {8}\n" +
+                "OspaWieczna: {9}\n" +
+                "ChorobaTrzustki: {10}\n",
+                NiedoczynnoscTarczycy.ToString(),
+                ChorobaNerek.ToString(),
+                ChorobaAlzheimera.ToString(),
+                StwardnienieRozsianePoczatkowe.ToString(),
+                StwardnienieRozsianeZaawansowane.ToString(),
+                Depresja.ToString(),
+                ZapalenieUcha.ToString(),
+                ChorobaWiencowa.ToString(),
+                Ciaza.ToString(),
+                OspaWieczna.ToString(),
+                ChorobaTrzustki.ToString())
+                );
+        }
+
+        private void resetPoints() 
+        {
+            NiedoczynnoscTarczycy = 0.0f;
+            ChorobaNerek = 0.0f;
+            ChorobaAlzheimera = 0.0f;
+            StwardnienieRozsianePoczatkowe = 0.0f;
+            StwardnienieRozsianeZaawansowane = 0.0f;
+            Depresja = 0.0f;
+            ZapalenieUcha = 0.0f;
+            ChorobaWiencowa = 0.0f;
+            Ciaza = 0.0f;
+            OspaWieczna = 0.0f;
+            ChorobaTrzustki = 0.0f;
         }
     }
 }
