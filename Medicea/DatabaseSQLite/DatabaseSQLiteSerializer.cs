@@ -63,7 +63,6 @@ namespace Medicea.DatabaseSQLite
                         }
                         catch (Exception e)
                         {
-                            MessageBox.Show(e.Message);
                             Console.WriteLine(e.Message);
                         }
                     }

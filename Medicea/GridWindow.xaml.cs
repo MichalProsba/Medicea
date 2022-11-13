@@ -32,13 +32,6 @@ namespace Medicea
             set { toggleButtons = value; }
         }
 
-        List<TextBlock> textBlockButtons = new List<TextBlock>();
-        public List<TextBlock> TextBlockButtons
-        {
-            get { return textBlockButtons; }
-            set { textBlockButtons = value; }
-        }
-
         List<Symptom> symptoms = new List<Symptom>();
 
         public float NiedoczynnoscTarczycy = 0.0f;
@@ -66,7 +59,6 @@ namespace Medicea
             foreach (Symptom i in symptoms)
             {
                 toggleButtons.Add(new ToggleButton());
-                textBlockButtons.Add(new TextBlock());
             }
 
             int toggleButtonNumber = 1;
@@ -75,7 +67,7 @@ namespace Medicea
             foreach (ToggleButton i in toggleButtons)
             {
                 i.Name = "ToggleButton_" + toggleButtonNumber;
-                i.Foreground = Brushes.Transparent;
+                i.Content = symptoms[toggleButtonNumber - 1].NazwaObjawu;
                 Grid.SetColumn(i, column);
                 Grid.SetRow(i, row);
                 column++;
@@ -95,29 +87,6 @@ namespace Medicea
             toggleButtonNumber = 1;
             column = toggleButtonNumber - 1;
             row = 0;
-            foreach (TextBlock i in textBlockButtons)
-            {
-                i.Name = "TextBlock_" + toggleButtonNumber;
-                i.Text = symptoms[toggleButtonNumber - 1].NazwaObjawu;
-                i.HorizontalAlignment = HorizontalAlignment.Center;
-                i.VerticalAlignment = VerticalAlignment.Center;
-                i.TextWrapping= TextWrapping.Wrap;
-                i.Foreground = Brushes.Black;
-                Grid.SetColumn(i, column);
-                Grid.SetRow(i, row);
-                column++;
-                if (column % 8 == 0)
-                {
-                    row++;
-                    column = 0;
-                }
-                toggleButtonNumber++;
-            }
-
-            foreach (TextBlock i in textBlockButtons)
-            {
-                mainGrid.Children.Add(i);
-            }
         }
 
         private void calculatePoint_Click(object sender, RoutedEventArgs e)
@@ -180,6 +149,11 @@ namespace Medicea
             Ciaza = 0.0f;
             OspaWieczna = 0.0f;
             ChorobaTrzustki = 0.0f;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

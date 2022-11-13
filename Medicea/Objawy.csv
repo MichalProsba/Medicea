@@ -1,74 +1,74 @@
-ID;Nazwa_objawu;Wagi_niedoczynnosc_tarczycy;Wagi_choroby_nerek;Wagi_choroby_alzheimera;Wagi_stwardnienie_rozsiane_poczatkowe;Wagi_stwardnienie_rozsiane_zaawansowane;Wagi_depresja;Wagi_zapalenie_ucha;Wagi_choroba_wieÄcowa;Wagi_ciaza;Wagi_ospa_wieczna;Wagi_choroba_trzustki
-1;Bezsennoœæ;0;0;0;0;0;0;0;0;0,11;0;0
-2;Ból brzucha;0;0;0;0;0;0;0;0;0;0;0,13
-3;Ból g³owy;0;0,11;0;0;0;0;0;0;0;0,14;0,13
-4;Ból i pieczenie podczas oddawania moczu ;0;0,11;0;0;0;0;0;0;0;0;0
-5;Ból miêœni;0;0;0;0;0;0;0;0;0;0,14;0
-6;Ból piersi;0;0;0;0;0;0;0;0;0,11;0;0
-7;Ból stawów;0,06;0;0;0;0;0;0;0;0;0;0
-8;Ból ucha;0;0;0;0;0;0;0,13;0;0;0;0
-9;Ból w ¿ebrach;0;0,11;0;0;0;0;0;0;0;0;0
+ID;Nazwa_objawu;Wagi_niedoczynnosc_tarczycy;Wagi_choroby_nerek;Wagi_choroby_alzheimera;Wagi_stwardnienie_rozsiane_poczatkowe;Wagi_stwardnienie_rozsiane_zaawansowane;Wagi_depresja;Wagi_zapalenie_ucha;Wagi_choroba_wieÄ‚â€žcowa;Wagi_ciaza;Wagi_ospa_wieczna;Wagi_choroba_trzustki
+1;BezsennoÅ›Ä‡;0;0;0;0;0;0;0;0;0,11;0;0
+2;BÃ³l brzucha;0;0;0;0;0;0;0;0;0;0;0,13
+3;BÃ³l gÅ‚owy;0;0,11;0;0;0;0;0;0;0;0,14;0,13
+4;BÃ³l i pieczenie podczas oddawania moczu ;0;0,11;0;0;0;0;0;0;0;0;0
+5;BÃ³l miÄ™Å›ni;0;0;0;0;0;0;0;0;0;0,14;0
+6;BÃ³l piersi;0;0;0;0;0;0;0;0;0,11;0;0
+7;BÃ³l stawÃ³w;0,06;0;0;0;0;0;0;0;0;0;0
+8;BÃ³l ucha;0;0;0;0;0;0;0,13;0;0;0;0
+9;BÃ³l w Å¼ebrach;0;0,11;0;0;0;0;0;0;0;0;0
 10;Brak apetytu;0;0;0;0;0;0,08;0,13;0;0;0,14;0
-11;Brak odruchów brzusznych ;0;0;0;0,13;0;0;0;0;0;0;0
-12;Czêste zmiany nastroju;0;0;0,1;0;0,2;0,08;0;0;0;0;0
-13;Czêstsze oddawanie moczu;0;0;0;0;0;0;0;0;0,11;0;0
-14;Dra¿liwoœæ;0;0;0;0;0;0;0;0;0,11;0;0
-15;Dr¿enie koñczyn;0;0;0;0,13;0;0;0;0;0;0;0
-16;Dusznoœci;0,06;0;0;0;0;0;0;0,14;0;0;0
-17;Gor¹czka;0;0,11;0;0;0;0;0,13;0;0;0,14;0,13
-18;Ko³atanie miêœnia sercowego;0;0;0;0;0;0;0;0,14;0;0;0
+11;Brak odruchÃ³w brzusznych ;0;0;0;0,13;0;0;0;0;0;0;0
+12;CzÄ™ste zmiany nastroju;0;0;0,1;0;0,2;0,08;0;0;0;0;0
+13;CzÄ™stsze oddawanie moczu;0;0;0;0;0;0;0;0;0,11;0;0
+14;DraÅ¼liwoÅ›Ä‡;0;0;0;0;0;0;0;0;0,11;0;0
+15;DrÅ¼enie koÅ„czyn;0;0;0;0,13;0;0;0;0;0;0;0
+16;DusznoÅ›ci;0,06;0;0;0;0;0;0;0,14;0;0;0
+17;GorÄ…czka;0;0,11;0;0;0;0;0,13;0;0;0,14;0,13
+18;KoÅ‚atanie miÄ™Å›nia sercowego;0;0;0;0;0;0;0;0,14;0;0;0
 19;Krew w moczu;0;0,11;0;0;0;0;0;0;0;0;0
 20;Kruche paznokcie;0,06;0;0;0;0;0;0;0;0;0;0
-21;Mrowienie wzd³u¿ krêgosupa;0;0;0;0,13;0;0;0;0;0;0;0
-22;Myœli o œmierci;0;0;0;0;0;0,08;0;0;0;0;0
-23;Myœli samobójcze;0;0;0;0;0;0,08;0;0;0;0;0
-24;Nadmierna potliwoœæ;0;0;0;0;0;0;0;0,14;0;0;0
-25;Nadwra¿liwoœæ na zapachy;0;0;0;0;0;0;0;0;0,11;0;0
-26;Niechêæ do podejmowania jakichkolwiek czynnoœci ;0;0;0,1;0;0;0;0;0;0;0;0
-27;Niewydolnoœæ kr¹¿eniowa;0,06;0;0;0;0;0;0;0;0;0;0
-28;Obni¿enie ogólnej aktywnoœci psychicznej;0;0;0,1;0;0;0;0;0;0;0;0
-29;Obni¿enie samooceny;0;0;0;0;0;0,08;0;0;0;0;0
-30;Oczopl¹s;0;0;0;0,13;0;0;0;0;0;0;0
-31;Ogólna apatia;0;0;0,1;0;0;0;0;0;0;0;0
-32;Os³abienie;0,06;0;0;0;0;0,08;0;0,14;0;0,14;0
+21;Mrowienie wzdÅ‚uÅ¼ krÄ™gosupa;0;0;0;0,13;0;0;0;0;0;0;0
+22;MyÅ›li o Å›mierci;0;0;0;0;0;0,08;0;0;0;0;0
+23;MyÅ›li samobÃ³jcze;0;0;0;0;0;0,08;0;0;0;0;0
+24;Nadmierna potliwoÅ›Ä‡;0;0;0;0;0;0;0;0,14;0;0;0
+25;NadwraÅ¼liwoÅ›Ä‡ na zapachy;0;0;0;0;0;0;0;0;0,11;0;0
+26;NiechÄ™Ä‡ do podejmowania jakichkolwiek czynnoÅ›ci ;0;0;0,1;0;0;0;0;0;0;0;0
+27;NiewydolnoÅ›Ä‡ krÄ…Å¼eniowa;0,06;0;0;0;0;0;0;0;0;0;0
+28;ObniÅ¼enie ogÃ³lnej aktywnoÅ›ci psychicznej;0;0;0,1;0;0;0;0;0;0;0;0
+29;ObniÅ¼enie samooceny;0;0;0;0;0;0,08;0;0;0;0;0
+30;OczoplÄ…s;0;0;0;0,13;0;0;0;0;0;0;0
+31;OgÃ³lna apatia;0;0;0,1;0;0;0;0;0;0;0;0
+32;OsÅ‚abienie;0,06;0;0;0;0;0,08;0;0,14;0;0,14;0
 33;Poczucie winy;0;0;0;0;0;0,08;0;0;0;0;0
-34;Podwy¿szone ciœnienie krwi;0;0,11;0;0;0;0;0;0;0;0;0
-35;Pogorszenie s³uchu;0;0;0;0;0;0;0,13;0;0;0;0
-36;Pogorszenie sprawnoœci intelektualnej;0,06;0;0;0;0;0;0;0;0;0;0
-37;Pozaga³owe zapalenie nerwu wzrokowego;0;0;0;0,13;0;0;0;0;0;0;0
-38;Problem z koncentracj¹;0,06;0;0;0;0;0;0;0;0;0;0
-39;Problemy skórne;0;0;0;0;0;0;0;0;0;0;0,13
-40;Problemy z kontrol¹ czynnoœci fizjologicznych;0;0;0,1;0,13;0;0;0;0;0;0;0
-41;Problemy z p³odnoœci¹;0,06;0;0;0;0;0;0;0;0;0;0
-42;Problemy z rozpoznawaniem najbli¿szych osób;0;0;0,1;0;0,2;0;0;0;0;0;0
-43;Problemy z rozpoznawaniem pór dnia i nocy;0;0;0,1;0;0,2;0;0;0;0;0;0
-44;Przyœpieszona akcja serce;0;0;0;0;0;0;0;0,14;0;0;0
+34;PodwyÅ¼szone ciÅ›nienie krwi;0;0,11;0;0;0;0;0;0;0;0;0
+35;Pogorszenie sÅ‚uchu;0;0;0;0;0;0;0,13;0;0;0;0
+36;Pogorszenie sprawnoÅ›ci intelektualnej;0,06;0;0;0;0;0;0;0;0;0;0
+37;PozagaÅ‚owe zapalenie nerwu wzrokowego;0;0;0;0,13;0;0;0;0;0;0;0
+38;Problem z koncentracjÄ…;0,06;0;0;0;0;0;0;0;0;0;0
+39;Problemy skÃ³rne;0;0;0;0;0;0;0;0;0;0;0,13
+40;Problemy z kontrolÄ… czynnoÅ›ci fizjologicznych;0;0;0,1;0,13;0;0;0;0;0;0;0
+41;Problemy z pÅ‚odnoÅ›ciÄ…;0,06;0;0;0;0;0;0;0;0;0;0
+42;Problemy z rozpoznawaniem najbliÅ¼szych osÃ³b;0;0;0,1;0;0,2;0;0;0;0;0;0
+43;Problemy z rozpoznawaniem pÃ³r dnia i nocy;0;0;0,1;0;0,2;0;0;0;0;0;0
+44;PrzyÅ›pieszona akcja serce;0;0;0;0;0;0;0;0,14;0;0;0
 45;Rozwolnienie;0;0;0;0;0;0;0;0;0;0;0,13
-46;Sennoœæ;0,06;0,11;0;0;0;0;0;0;0;0;0
-47;Sztywnoœæ miêœni;0,06;0;0;0;0;0;0;0;0;0;0
-48;Trudnoœci w skupieniu siê;0;0;0;0;0;0,08;0;0;0;0;0
+46;SennoÅ›Ä‡;0,06;0,11;0;0;0;0;0;0;0;0;0
+47;SztywnoÅ›Ä‡ miÄ™Å›ni;0,06;0;0;0;0;0;0;0;0;0;0
+48;TrudnoÅ›ci w skupieniu siÄ™;0;0;0;0;0;0,08;0;0;0;0;0
 49;Ucisk za mostkiem;0;0;0;0;0;0;0;0,14;0;0;0
 50;Uczucie rozpierania;0;0;0;0;0;0;0,13;0;0;0;0
 51;Uczucie zimna;0,06;0;0;0;0;0;0;0;0;0;0
 52;Utrata wagi;0;0;0;0;0;0;0;0;0;0;0,13
-53;Utrata zainteresowañ;0;0;0;0;0;0,08;0;0;0;0;0
+53;Utrata zainteresowaÅ„;0;0;0;0;0;0,08;0;0;0;0;0
 54;Wyciek ropny z ucha;0;0;0;0;0;0;0,13;0;0;0;0
 55;Wymioty;0;0,11;0;0;0;0;0,13;0,14;0,11;0;0,13
-56;Wypadaj¹ce w³osy;0,06;0;0;0;0;0;0;0;0;0;0
+56;WypadajÄ…ce wÅ‚osy;0,06;0;0;0;0;0;0;0;0;0;0
 57;Wyrzuty sumienia;0;0;0;0;0;0,08;0;0;0;0;0
-58;Wysuszenie skóry;0,06;0;0;0;0;0;0;0;0;0;0
+58;Wysuszenie skÃ³ry;0,06;0;0;0;0;0;0;0;0;0;0
 59;Wysypka;0;0;0;0;0;0;0;0;0;0,14;0
-60;Wzrost masy cia³a;0,06;0;0;0;0;0;0;0;0;0;0
+60;Wzrost masy ciaÅ‚a;0,06;0;0;0;0;0;0;0;0;0;0
 61;Wzrost temperatury;0;0;0;0;0;0;0;0;0,11;0;0
-62;Zaburzenia cyklu miesi¹czkowego;0,06;0;0;0;0;0;0;0;0,11;0;0
-63;Zaburzenia gryzienia i po³ykania;0;0;0;0;0,2;0;0;0;0;0;0
+62;Zaburzenia cyklu miesiÄ…czkowego;0,06;0;0;0;0;0;0;0;0,11;0;0
+63;Zaburzenia gryzienia i poÅ‚ykania;0;0;0;0;0,2;0;0;0;0;0;0
 64;Zaburzenia orientacji w czasie i przestrzeni;0;0;0,1;0;0;0;0;0;0;0;0
-65;Zaburzenia pamiêci;0;0;0,1;0;0;0;0;0;0;0;0
-66;Zaburzenia równowagi;0;0;0,1;0,13;0;0;0;0;0;0;0
+65;Zaburzenia pamiÄ™ci;0;0;0,1;0;0;0;0;0;0;0;0
+66;Zaburzenia rÃ³wnowagi;0;0;0,1;0,13;0;0;0;0;0;0;0
 67;Zaburzenia snu;0;0;0;0;0;0,08;0;0;0;0;0
 68;Zaparcia;0,06;0;0;0;0;0;0;0;0;0;0
-69;Zatrzymanie wody w organiŸnie;0,06;0,11;0;0;0;0;0;0;0;0;0
-70;Zawroty g³owy;0;0;0;0,13;0;0;0;0;0;0;0
-71;Z³e samopoczucie;0;0;0;0;0;0;0,13;0;0;0,14;0
-72;Zmêczenie;0;0;0;0;0;0;0;0;0,11;0;0,13
+69;Zatrzymanie wody w organiÄ¹ÅŸnie;0,06;0,11;0;0;0;0;0;0;0;0;0
+70;Zawroty gÅ‚owy;0;0;0;0,13;0;0;0;0;0;0;0
+71;ZÅ‚e samopoczucie;0;0;0;0;0;0;0,13;0;0;0,14;0
+72;ZmÄ™czenie;0;0;0;0;0;0;0;0;0,11;0;0,13
 73;Zmniejszenie libido;0,06;0;0;0;0,2;0,08;0;0;0;0;0
