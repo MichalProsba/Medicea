@@ -58,7 +58,17 @@ namespace Medicea
 
             foreach (Symptom i in symptoms)
             {
-                toggleButtons.Add(new ToggleButton());
+                var tButton = new ToggleButton()
+                {
+                    Padding = new Thickness(2.0),
+                    Margin = new Thickness(5.0),
+                    Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#55FFFFFF")),
+                    BorderThickness = new Thickness(3.0),
+                    Foreground = new SolidColorBrush(Colors.Black),
+                    BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFD992B1")),
+                    Height = 45,
+                };
+                toggleButtons.Add(tButton);
             }
 
             int toggleButtonNumber = 1;
@@ -67,7 +77,13 @@ namespace Medicea
             foreach (ToggleButton i in toggleButtons)
             {
                 i.Name = "ToggleButton_" + toggleButtonNumber;
-                i.Content = symptoms[toggleButtonNumber - 1].NazwaObjawu;
+                i.Content = new TextBlock()
+                {
+                    Text = symptoms[toggleButtonNumber - 1].NazwaObjawu,
+                    TextAlignment = TextAlignment.Center,
+                    TextWrapping = TextWrapping.Wrap,
+                    FontFamily = new FontFamily("Arial"),
+                };
                 Grid.SetColumn(i, column);
                 Grid.SetRow(i, row);
                 column++;

@@ -1,0 +1,50 @@
+﻿<Window x:Class="Medicea.HelloWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medicea"
+        mc:Ignorable="d"
+        WindowState="Normal"
+        ResizeMode="NoResize"
+        Title="Medicea"
+        Height="475" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/pexels-photo-7130560.png"/>
+    </Window.Background>
+    <Border Padding="30" Height="550" Width="800">
+        <Grid Width="800" Margin="-26,-30,-34,-41" >
+            <Label Margin="348,28,302,491" FontSize="30" Foreground="White" FontWeight="Bold" FontFamily="Arial" >Medicea</Label>
+
+            <Label Margin="217,70,217,436" FontSize="30" FontWeight="Bold" FontFamily="Arial" Foreground="White">Sprawdź swoje zdrowie!</Label>
+
+            <Label Content="Imie" Panel.ZIndex="2" Margin="87,127,668,402" Foreground="White" FontSize="16" FontFamily="Arial" />
+            <TextBox Foreground="White" Padding="4" TextWrapping="Wrap" x:Name="name_tbox" Margin="32,159,612,372" Panel.ZIndex="2" BorderBrush="White" Background="{x:Null}" BorderThickness="2px" />
+
+            <Label Content="Nazwisko" Panel.ZIndex="2" Margin="72,187,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="80" Foreground="White" FontSize="16" FontFamily="Arial" />
+            <TextBox Foreground="White" Padding="4"  TextWrapping="Wrap" x:Name="surname_tbox" Margin="32,218,613,314" Panel.ZIndex="2" BorderBrush="White" Background="{x:Null}" BorderThickness="2px" />
+
+            <Label Content="Adres email" Panel.ZIndex="2" Margin="58,247,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="103" Foreground="White" FontSize="16" FontFamily="Arial" />
+            <TextBox Foreground="White" Padding="4"  TextWrapping="Wrap" x:Name="email_tbox" Margin="33,274,612,258" Panel.ZIndex="2" BorderBrush="White" Background="{x:Null}" BorderThickness="2px" />
+
+            <Label Content="Płeć" Margin="88,303,0,0" Panel.ZIndex="2" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="44" Foreground="White" FontSize="16" FontFamily="Arial"/>
+            <TextBox Foreground="White" Padding="4"  TextWrapping="Wrap" x:Name="sex_tbox" Margin="33,331,612,201" Panel.ZIndex="2" BorderBrush="White" Background="{x:Null}" BorderThickness="2px" />
+
+            <Button Content="Zatwierdź" x:Name="accept_btn" Click="accept_btn_Click" Background="#55FFFFFF" FontSize="20" BorderBrush="#FFD992B1" BorderThickness="3px" FontFamily="Arial" Margin="400,365,243,157" Foreground="White">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Wyjdź" x:Name="cancal_btn" Click="cancal_btn_Click" Background="#55FFFFFF" FontSize="20" BorderBrush="#FFD992B1" BorderThickness="3px" FontFamily="Arial" Margin="593,365,50,157" Foreground="White">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Border>
+
+</Window>
