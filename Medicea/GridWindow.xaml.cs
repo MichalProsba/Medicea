@@ -46,6 +46,9 @@ namespace Medicea
         public float OspaWieczna = 0.0f;
         public float ChorobaTrzustki = 0.0f;
 
+        ResultsWindow resultsWindow;
+
+
         public GridWindow()
         {
             InitializeComponent();
@@ -125,31 +128,21 @@ namespace Medicea
                     ChorobaTrzustki += symptoms[i].WagiChorobaTrzustki;
                 }
             }
-            MessageBox.Show(string.Format(
-                "Choroby: \n" +
-                "NiedoczynnoscTarczycy: {0}\n" +
-                "ChorobaNerek: {1}\n" +
-                "ChorobaAlzheimera: {2}\n" +
-                "StwardnienieRozsianePoczatkowe: {3}\n" +
-                "StwardnienieRozsianeZaawansowane: {4}\n" +
-                "Depresja: {5}\n" +
-                "ZapalenieUcha: {6}\n" +
-                "ChorobaWiencowa: {7}\n" +
-                "Ciaza: {8}\n" +
-                "OspaWieczna: {9}\n" +
-                "ChorobaTrzustki: {10}\n",
-                NiedoczynnoscTarczycy.ToString(),
-                ChorobaNerek.ToString(),
-                ChorobaAlzheimera.ToString(),
-                StwardnienieRozsianePoczatkowe.ToString(),
-                StwardnienieRozsianeZaawansowane.ToString(),
-                Depresja.ToString(),
-                ZapalenieUcha.ToString(),
-                ChorobaWiencowa.ToString(),
-                Ciaza.ToString(),
-                OspaWieczna.ToString(),
-                ChorobaTrzustki.ToString())
-                );
+            resultsWindow = new(
+                NiedoczynnoscTarczycy,
+                ChorobaNerek,
+                ChorobaAlzheimera,
+                StwardnienieRozsianePoczatkowe,
+                StwardnienieRozsianeZaawansowane,
+                Depresja,
+                ZapalenieUcha,
+                ChorobaWiencowa,
+                Ciaza,
+                OspaWieczna,
+                ChorobaTrzustki
+            );
+            resultsWindow.Show();
+            this.Close();
         }
 
         private void resetPoints() 
