@@ -32,7 +32,7 @@ namespace Medicea
 
         private void accept_btn_Click(object sender, RoutedEventArgs e)
         {
-            if(sex_tbox.Text.Length > 0 && email_tbox.Text.Length > 0 && name_tbox.Text.Length > 0 && surname_tbox.Text.Length > 0)
+            if(sex_tbox.Text.Length > 0 && name_tbox.Text.Length > 0 && surname_tbox.Text.Length > 0)
             {
                 gw.Show();
                 this.Close();
