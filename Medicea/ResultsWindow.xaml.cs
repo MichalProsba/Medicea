@@ -43,17 +43,17 @@ namespace Medicea
              float OspaWieczna,
              float ChorobaTrzustki
         ){
-            this.NiedoczynnoscTarczycy = NiedoczynnoscTarczycy;
-            this.ChorobaAlzheimera = ChorobaAlzheimera;
-            this.ChorobaNerek = ChorobaNerek;
-            this.StwardnienieRozsianePoczatkowe = StwardnienieRozsianePoczatkowe;
-            this.StwardnienieRozsianeZaawansowane = StwardnienieRozsianeZaawansowane;
-            this.Depresja = Depresja;
-            this.ZapalenieUcha = ZapalenieUcha;
-            this.ChorobaWiencowa = ChorobaWiencowa;
-            this.Ciaza = Ciaza;
-            this.OspaWieczna = OspaWieczna;
-            this.ChorobaTrzustki = ChorobaTrzustki;
+            this.NiedoczynnoscTarczycy = (int)NiedoczynnoscTarczycy*100;
+            this.ChorobaAlzheimera = (int)ChorobaAlzheimera * 100;
+            this.ChorobaNerek = (int)ChorobaNerek * 100;
+            this.StwardnienieRozsianePoczatkowe = (int)StwardnienieRozsianePoczatkowe * 100;
+            this.StwardnienieRozsianeZaawansowane = (int)StwardnienieRozsianeZaawansowane * 100;
+            this.Depresja = (int)Depresja * 100;
+            this.ZapalenieUcha = (int)ZapalenieUcha * 100;
+            this.ChorobaWiencowa = (int)ChorobaWiencowa * 100;
+            this.Ciaza = (int)Ciaza * 100;
+            this.OspaWieczna = (int)OspaWieczna * 100;
+            this.ChorobaTrzustki = (int)ChorobaTrzustki * 100;
             InitializeComponent();
             generateLabelsFromRetrivetData();
         }
