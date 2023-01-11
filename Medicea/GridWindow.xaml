@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Medicea"
         mc:Ignorable="d"
         WindowState="Normal"
-        ResizeMode="CanResizeWithGrip"
+        ResizeMode="NoResize"
         Title="Medicea"
          Height="780" Width="1600"
         >
