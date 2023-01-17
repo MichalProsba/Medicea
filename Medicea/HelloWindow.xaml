@@ -27,7 +27,10 @@
 
             <Label Content="Płeć" Margin="58,247,0,0" Panel.ZIndex="2" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="44" Foreground="White" FontSize="16" FontFamily="Arial"/>
 
-            <ComboBox Foreground="Black" Margin="32,277,613,250" FontSize="16" FontFamily="Arial" Name="sex_combobox">
+            <ComboBox Margin="32,277,613,250" FontSize="16" FontFamily="Arial" Name="sex_combobox" BorderBrush="#FF7D5757" Opacity="0.505" Foreground="Black">
+                <ComboBox.Background>
+                    <ImageBrush Stretch="None" Opacity="0"/>
+                </ComboBox.Background>
                 <ComboBoxItem IsSelected="true">Kobieta</ComboBoxItem>
                 <ComboBoxItem>Mężczyzna</ComboBoxItem>
             </ComboBox>

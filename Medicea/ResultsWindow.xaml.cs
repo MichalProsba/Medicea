@@ -43,22 +43,76 @@ namespace Medicea
              float OspaWieczna,
              float ChorobaTrzustki
         ){
-            this.NiedoczynnoscTarczycy = (int)NiedoczynnoscTarczycy*100;
-            this.ChorobaAlzheimera = (int)ChorobaAlzheimera * 100;
-            this.ChorobaNerek = (int)ChorobaNerek * 100;
-            this.StwardnienieRozsianePoczatkowe = (int)StwardnienieRozsianePoczatkowe * 100;
-            this.StwardnienieRozsianeZaawansowane = (int)StwardnienieRozsianeZaawansowane * 100;
-            this.Depresja = (int)Depresja * 100;
-            this.ZapalenieUcha = (int)ZapalenieUcha * 100;
-            this.ChorobaWiencowa = (int)ChorobaWiencowa * 100;
-            this.Ciaza = (int)Ciaza * 100;
-            this.OspaWieczna = (int)OspaWieczna * 100;
-            this.ChorobaTrzustki = (int)ChorobaTrzustki * 100;
+            this.NiedoczynnoscTarczycy = (int)(NiedoczynnoscTarczycy*100);
+            this.ChorobaAlzheimera = (int)(ChorobaAlzheimera * 100);
+            this.ChorobaNerek = (int)(ChorobaNerek * 100);
+            this.StwardnienieRozsianePoczatkowe = (int)(StwardnienieRozsianePoczatkowe * 100);
+            this.StwardnienieRozsianeZaawansowane = (int)(StwardnienieRozsianeZaawansowane * 100);
+            this.Depresja = (int)(Depresja * 100);
+            this.ZapalenieUcha = (int)(ZapalenieUcha * 100);
+            this.ChorobaWiencowa = (int)(ChorobaWiencowa * 100);
+            this.Ciaza = (int)(Ciaza * 100);
+            this.OspaWieczna = (int)(OspaWieczna * 100);
+            this.ChorobaTrzustki = (int)(ChorobaTrzustki * 100);
+
+            if(this.NiedoczynnoscTarczycy > 100)
+            {
+                this.NiedoczynnoscTarczycy = 100;
+            }
+
+            if(this.ChorobaAlzheimera > 100)
+            {
+                this.ChorobaAlzheimera = 100;
+            }
+
+            if (this.ChorobaNerek > 100)
+            {
+                this.ChorobaNerek = 100;
+            }
+
+            if (this.StwardnienieRozsianePoczatkowe > 100)
+            {
+                this.StwardnienieRozsianePoczatkowe = 100;
+            }
+
+            if (this.StwardnienieRozsianeZaawansowane > 100)
+            {
+                this.StwardnienieRozsianeZaawansowane = 100;
+            }
+
+            if (this.Depresja > 100)
+            {
+                this.Depresja = 100;
+            }
+
+            if (this.ZapalenieUcha > 100)
+            {
+                this.ZapalenieUcha = 100;
+            }
+
+            if (this.ChorobaWiencowa > 100)
+            {
+                this.ChorobaWiencowa = 100;
+            }
+
+            if (this.Ciaza > 100)
+            {
+                this.Ciaza = 100;
+            }
+
+            if (this.OspaWieczna > 100)
+            {
+                this.OspaWieczna = 100;
+            }
+
+            if (this.ChorobaTrzustki > 100)
+            {
+                this.ChorobaTrzustki = 100;
+            }
+
             InitializeComponent();
             generateLabelsFromRetrivetData();
         }
-
-
 
         private void generateLabelsFromRetrivetData()
         {
