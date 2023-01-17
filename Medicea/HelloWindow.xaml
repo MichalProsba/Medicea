@@ -24,8 +24,14 @@
             <Label Content="Nazwisko" Panel.ZIndex="2" Margin="72,187,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="80" Foreground="White" FontSize="16" FontFamily="Arial" />
             <TextBox Foreground="White" Padding="4"  TextWrapping="Wrap" x:Name="surname_tbox" Margin="32,218,613,314" Panel.ZIndex="2" BorderBrush="White" Background="{x:Null}" BorderThickness="2px" />
 
+
             <Label Content="Płeć" Margin="58,247,0,0" Panel.ZIndex="2" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="44" Foreground="White" FontSize="16" FontFamily="Arial"/>
-            <TextBox Foreground="White" Padding="4"  TextWrapping="Wrap" x:Name="sex_tbox" Margin="33,274,612,258" Panel.ZIndex="2" BorderBrush="White" Background="{x:Null}" BorderThickness="2px" />
+
+            <ComboBox Foreground="Black" Margin="32,277,613,250" FontSize="16" FontFamily="Arial" Name="sex_combobox">
+                <ComboBoxItem IsSelected="true">Kobieta</ComboBoxItem>
+                <ComboBoxItem>Mężczyzna</ComboBoxItem>
+            </ComboBox>
+
 
             <Button Content="Zatwierdź" x:Name="accept_btn" Click="accept_btn_Click" Background="#55FFFFFF" FontSize="20" BorderBrush="#FFD992B1" BorderThickness="3px" FontFamily="Arial" Margin="400,365,243,157" Foreground="White">
                 <Button.Resources>

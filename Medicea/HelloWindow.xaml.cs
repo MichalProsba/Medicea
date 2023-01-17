@@ -23,7 +23,6 @@ namespace Medicea
         {
             InitializeComponent();
         }
-        GridWindow gw = new();
 
         private void cancal_btn_Click(object sender, RoutedEventArgs e)
         {
@@ -32,8 +31,9 @@ namespace Medicea
 
         private void accept_btn_Click(object sender, RoutedEventArgs e)
         {
-            if(sex_tbox.Text.Length > 0 && name_tbox.Text.Length > 0 && surname_tbox.Text.Length > 0)
+            if(name_tbox.Text.Length > 0 && surname_tbox.Text.Length > 0)
             {
+                GridWindow gw = new(sex_combobox.SelectedIndex);
                 gw.Show();
                 this.Close();
             }

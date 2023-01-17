@@ -48,11 +48,14 @@ namespace Medicea
 
         ResultsWindow resultsWindow;
 
+        int gender;
 
-        public GridWindow()
+
+        public GridWindow(int sex_combobox)
         {
             InitializeComponent();
             PrepareDataToDisplayFromDatabase();
+            gender = sex_combobox;
         }
 
         public void PrepareDataToDisplayFromDatabase()
@@ -122,8 +125,14 @@ namespace Medicea
                     StwardnienieRozsianeZaawansowane += symptoms[i].WagiStwardnienieRozsianeZaawansowane; 
                     Depresja += symptoms[i].WagiDepresja; 
                     ZapalenieUcha += symptoms[i].WagiZapalenieUcha; 
-                    ChorobaWiencowa += symptoms[i].WagiChorobaWiencowa; 
-                    Ciaza += symptoms[i].WagiCiaza; 
+                    ChorobaWiencowa += symptoms[i].WagiChorobaWiencowa;
+                    if (gender == 0)
+                    {
+                        Ciaza += symptoms[i].WagiCiaza;
+                    }
+                    else {
+                        Ciaza += 0.0f;
+                    }
                     OspaWieczna += symptoms[i].WagiOspaWieczna; 
                     ChorobaTrzustki += symptoms[i].WagiChorobaTrzustki;
                 }
